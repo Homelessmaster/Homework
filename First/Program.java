@@ -119,7 +119,7 @@ public class Program {
             System.out.println("Вы купили:");
             System.out.println(tea.displayInfo());
         }
-
+        
     }
 
 }
