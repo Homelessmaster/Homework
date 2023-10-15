@@ -69,6 +69,7 @@ public class TableModel implements Model {
                 }             
             }
         }
+        
         for (Table table : this.tables) {
             if (table.getNo() == tableNo) {
                 Reservation reservation = new Reservation(reservationDate, name);
