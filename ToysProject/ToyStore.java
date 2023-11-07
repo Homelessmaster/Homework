@@ -39,7 +39,7 @@ class ToyStore {
     public void getPrizeToy() throws IOException {
         if (!this.prizeToys.isEmpty()) {
             Toy toy = this.prizeToys.remove(0);
-            FileWriter writer = new FileWriter("prizes.txt", true);
+            FileWriter writer = new FileWriter("ToysProject\\prizes.txt", true);
             writer.write(toy.id + "\n");
             writer.close();
         }
