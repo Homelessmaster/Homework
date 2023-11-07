@@ -1,22 +1,16 @@
 import java.io.*;
 
+
 public class Program {
     public static void main(String[] args) throws IOException {
         ToyStore store = new ToyStore();
-        store.put("1", "конструктор", 2);
-        store.put("2", "робот", 2);
-        store.put("3", "кукла", 6);
+        store.addToy("1", "конструктор", 10, 0.2);
+        store.addToy("2", "робот", 10, 0.2);
+        store.addToy("3", "кукла", 10, 0.6);
 
-        FileWriter writer = new FileWriter("ToysProject\\output.txt");
         for (int i = 0; i < 10; i++) {
-            Toy toy = store.get();
-            if (toy != null) {
-                writer.write(toy.getId() + "\n");
-            }
+            store.drawPrizeToy();
+            store.getPrizeToy();
         }
-        store.get();
-        writer.close();
     }
 }
-
-

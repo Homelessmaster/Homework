@@ -1,13 +1,17 @@
 class Toy {
-    private String id;
-    private String name;
-    private int weight;
+    String id;
+    String name;
+    int quantity;
+    double weight;
 
-    public Toy(String id, String name, int weight) {
+    public Toy(String id, String name, int quantity, double weight) {
         this.id = id;
         this.name = name;
+        this.quantity = quantity;
         this.weight = weight;
     }
+
+
 
     public String getId() {
         return id;
@@ -20,4 +24,8 @@ class Toy {
     public int getWeight() {
         return weight;
     }
+    public int getCount() {
+        return count;
+    }
+    
 }
